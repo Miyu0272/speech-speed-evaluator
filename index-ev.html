@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>スピーチ速度評価</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1>指定された動画のスピーチ速度を評価</h1>
+
+  <video id="lectureVideo" controls>
+    <source id="videoSource" src="" type="video/mp4">
+    動画を読み込めません。
+  </video>
+
+  <button onclick="analyzeSpeechSpeed()">解析する</button>
+
+  <div id="resultText">解析結果がここに表示されます。</div>
+
+  <script src="js/evaluator.js"></script>
+</body>
+</html>
